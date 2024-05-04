@@ -1,7 +1,10 @@
 A RESTful API in Python that can perform Create, Read, Update and Delete operations in a database 🚀🚀
 
 Post user's data on http://localhost:5000/postUser in the following format
-    {
+
+
+
+{
     "name": "string",
     "password":"string",
     "email":"string",
