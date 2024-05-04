@@ -9,5 +9,8 @@ Post user's data on http://localhost:5000/postUser in the following format
                "string"
     ]
 }
+
+
 Fetch user's data (latest posting) on http://localhost:5000/getUser 
-# You have to post before fetching otherwise will return error
+
+Note: You have to post before fetching otherwise will return error
