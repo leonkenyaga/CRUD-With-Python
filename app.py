@@ -1,6 +1,7 @@
 # app.py
 from flask import Flask, request, jsonify
 import user
+import databaseinit
 
 app = Flask(__name__)
 
@@ -17,6 +18,7 @@ def add_country():
         global newUser, account
         account = request.get_json()    
         newUser = user.User(account["name"], account["password"], account["email"], account["friends"])
+        databaseinit.InitializeDatabase()
         user.PrintUser(newUser)
         return account, 201
     return {"error": "Request must be JSON"}, 415
